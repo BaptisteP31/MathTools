@@ -1,0 +1,114 @@
+Lbl θ
+Menu("MathTools - Catégories","Probabilités",1,"Équation degré 2",2,"Produit Scalaire",3,"Quitter",Q)
+Pause
+
+
+Lbl 1
+Menu("Proba - Sélection","Loi Binomiale =",11,"Loi Binomiale <=",22,"Retour",R,"Quitter",Q)
+Stop
+
+
+Lbl 2
+
+EffÉcran
+Disp "Équation de type","      ax²+bx+c=0
+Input "a: ",A
+Input "b: ",B
+Input "c: ",C
+B²-4AC→D
+Disp "Delta: ",D
+If D=0
+Disp "Une solution dans R",­B/(2AFrac
+If D>0
+Disp "Deux solutions dans R",(­B-√(D))/(2A)Frac,(­B+√(D))/(2AFrac
+If D<0
+Then:a+b
+√(abs(D→D
+Disp "Deux solutions dans C",(­B-D)/(2A)Frac,(­B+D)/(2AFrac
+End
+Réel
+Pause 
+Goto θ
+
+
+Lbl Q
+EffÉcran
+Stop
+
+
+Lbl 11
+
+EffÉcran
+Input "Nombre d'éssais: ",N
+Input "Probailité p: ",P
+Input "Valeur de K: ",K
+Disp "P(X=K): ",binomFdp(N,P,K)
+Stop
+
+
+Lbl 22
+
+EffÉcran
+Input "Nombre d'éssais: ",N
+Input "Probailité p: ",P
+Input "Valeur de K: ",K
+Disp "P(X<=K): ",binomFRép(N,P,K)
+Stop
+
+Lbl R
+Goto θ
+Stop
+
+
+Lbl 3
+Menu("Produit Scalaire - Sélection","Formule Norme et Cos Deg",N,"Formule Norme et Cos Rad",R,"Formule Coordonées",C,"Retour",R,"Quitter",Q)
+Stop
+
+
+Lbl N
+
+Degré
+EffÉcran
+Disp "u.v=|u|*|v|*cos(u,v) Deg"
+Disp ""
+Input "|u|: ",U
+Input "|v|: ",V
+Input "Angle: ",C
+Disp ""
+Disp "u.v =",UVcos(C)
+Pause 
+Goto θ
+Stop
+
+
+Lbl R
+
+Radian
+EffÉcran
+Disp "u.v=|u|*|v|*cos(u,v) Rad"
+Disp ""
+Input "||u||: ",U
+Input "||v||: ",V
+Input "Angle: ",C
+Disp ""
+Disp "u.v =",UVcos(C)
+Pause 
+Goto θ
+Stop
+
+
+Lbl C
+
+EffÉcran
+Disp "Coordonnées de U:"
+Input "Xu: ",X
+Input "Yu: ",Y
+Input "Zu: ",Z
+Disp "Coordonnées de V:"
+Input "Xv: ",L
+Input "Yv: ",M
+Input "Zv: ",N
+Disp "u.v=",XL+YM+ZN
+Pause 
+Goto θ
+Stop

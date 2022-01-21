@@ -10,7 +10,7 @@ Stop
 
 Lbl 2
 
-EffÉcran
+EffEcran
 Disp "Equation type","      ax²+bx+c=0
 Input "a: ",A
 Input "b: ",B
@@ -26,19 +26,19 @@ Then:a+b
 √(abs(D→D
 Disp "Two solutions in C",(­B-D)/(2A)Frac,(­B+D)/(2AFrac
 End
-Réel
+Reel
 Pause 
 Goto θ
 
 
 Lbl Q
-EffÉcran
+EffEcran
 Stop
 
 
 Lbl 11
 
-EffÉcran
+EffEcran
 Input "Trials number: ",N
 Input "Probability p: ",P
 Input "K-value: ",K
@@ -48,11 +48,11 @@ Stop
 
 Lbl 22
 
-EffÉcran
+EffEcran
 Input "Trials Number: ",N
 Input "Probability p: ",P
-Input "K-Value: ",K
-Disp "P(X<=K): ",binomFRép(N,P,K)
+Input "K-value: ",K
+Disp "P(X<=K): ",binomFRep(N,P,K)
 Stop
 
 Lbl R
@@ -67,8 +67,8 @@ Stop
 
 Lbl N
 
-Degré
-EffÉcran
+Degre
+EffEcran
 Disp "u.v=|u|*|v|*cos(u,v) Deg"
 Disp ""
 Input "|u|: ",U
@@ -84,7 +84,7 @@ Stop
 Lbl R
 
 Radian
-EffÉcran
+EffEcran
 Disp "u.v=|u|*|v|*cos(u,v) Rad"
 Disp ""
 Input "||u||: ",U
@@ -99,7 +99,7 @@ Stop
 
 Lbl C
 
-EffÉcran
+EffEcran
 Disp "U coordinates:"
 Input "Xu: ",X
 Input "Yu: ",Y

@@ -50,7 +50,7 @@ Lbl 22
 
 EffÉcran
 Input "Nombre d'éssais: ",N
-Input "Probailité p: ",P
+Input "Probabilité p: ",P
 Input "Valeur de K: ",K
 Disp "P(X<=K): ",binomFRép(N,P,K)
 Stop

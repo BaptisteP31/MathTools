@@ -40,7 +40,7 @@ Lbl 11
 
 EffÉcran
 Input "Nombre d'éssais: ",N
-Input "Probailité p: ",P
+Input "Probabilité p: ",P
 Input "Valeur de K: ",K
 Disp "P(X=K): ",binomFdp(N,P,K)
 Stop

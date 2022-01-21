@@ -1,0 +1,114 @@
+Lbl θ
+Menu("MathTools - Categories","probabilities",1,"Degree 2 equation",2,"Scalar product",3,"Quit",Q)
+Pause
+
+
+Lbl 1
+Menu("Proba - Selection","Binomial Law =",11,"Binomial Law <=",22,"Back",R,"Quit",Q)
+Stop
+
+
+Lbl 2
+
+EffÉcran
+Disp "Equation type","      ax²+bx+c=0
+Input "a: ",A
+Input "b: ",B
+Input "c: ",C
+B²-4AC→D
+Disp "Delta: ",D
+If D=0
+Disp "One solution in R",­B/(2AFrac
+If D>0
+Disp "Two solutions in R",(­B-√(D))/(2A)Frac,(­B+√(D))/(2AFrac
+If D<0
+Then:a+b
+√(abs(D→D
+Disp "Two solutions in C",(­B-D)/(2A)Frac,(­B+D)/(2AFrac
+End
+Réel
+Pause 
+Goto θ
+
+
+Lbl Q
+EffÉcran
+Stop
+
+
+Lbl 11
+
+EffÉcran
+Input "Trials number: ",N
+Input "Probability p: ",P
+Input "K-value: ",K
+Disp "P(X=K): ",binomFdp(N,P,K)
+Stop
+
+
+Lbl 22
+
+EffÉcran
+Input "Trials Number: ",N
+Input "Probability p: ",P
+Input "K-Value: ",K
+Disp "P(X<=K): ",binomFRép(N,P,K)
+Stop
+
+Lbl R
+Goto θ
+Stop
+
+
+Lbl 3
+Menu("Scalar product - Selection","Standard and Cos Deg Formula",N,"Standard and Cos Rad Formula",R,"Formula coordinates",C,"Back",R,"Quit",Q)
+Stop
+
+
+Lbl N
+
+Degré
+EffÉcran
+Disp "u.v=|u|*|v|*cos(u,v) Deg"
+Disp ""
+Input "|u|: ",U
+Input "|v|: ",V
+Input "Angle: ",C
+Disp ""
+Disp "u.v =",UVcos(C)
+Pause 
+Goto θ
+Stop
+
+
+Lbl R
+
+Radian
+EffÉcran
+Disp "u.v=|u|*|v|*cos(u,v) Rad"
+Disp ""
+Input "||u||: ",U
+Input "||v||: ",V
+Input "Angle: ",C
+Disp ""
+Disp "u.v =",UVcos(C)
+Pause 
+Goto θ
+Stop
+
+
+Lbl C
+
+EffÉcran
+Disp "U coordinates:"
+Input "Xu: ",X
+Input "Yu: ",Y
+Input "Zu: ",Z
+Disp "V coordinates:"
+Input "Xv: ",L
+Input "Yv: ",M
+Input "Zv: ",N
+Disp "u.v=",XL+YM+ZN
+Pause 
+Goto θ
+Stop
